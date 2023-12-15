@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Divyakumar's Protfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Divyakumar Patel</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#project">Project</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- For Mobile  -->
+    <nav id="hamburger-nav">
+      <div class="logo">Divyakumar Patel</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="togglemenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="about" onclick="togglemenu()">About</a></li>
+          <li><a href="experience" onclick="togglemenu()">Experience</a></li>
+          <li><a href="project" onclick="togglemenu()">Project</a></li>
+          <li><a href="contact" onclick="togglemenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <!-- PROFILE SECTION -->
+    <section id="profile">
+      <div class="section__profile-container">
+        <img src="./assets/profile-pic.jpg" alt="Divyakumar's Profile Pic" />
+      </div>
+      <div class="section__text">
+        <p class="section__text_p1">Hello, I'm</p>
+        <h1 class="title">Divyakumar Patel</h1>
+        <p class="section__text_p2">Software Developer</p>
+        <div class="btn_container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./contact'">
+            Contact Info
+          </button>
+        </div>
+
+        <div class="social_container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My linkedin profile"
+            class="icon"
+            onclick="window.open('https://www.linkedin.com/in/divyakumar-patel-00b8661a7/', '_blank')"
+          />
+
+          <img
+            src="./assets/github.png"
+            alt="My github profile"
+            class="icon"
+            onclick="window.open('https://github.com/Divyakumar0711', '_blank')"
+            target="_blank"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+      <p class="section__text_p1">Get to Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.jpg"
+            alt="profile-pic"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <!-- <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>1+ years <br />React Native Developer</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.E Information Technology <br />Masc Computer Science</p>
+            </div>
+          </div> -->
+          <div class="text-container">
+            <p>
+              I am currently pursuing a Master's in Applied Science in Computer
+              Science at Lakehead University, building on my Bachelor's in
+              Information Technology. With over a year of experience as a React
+              Native developer and a 3-month internship in ASP.NET, I bring a
+              solid foundation in mobile and web development. My passion lies in
+              creating efficient and user-friendly applications, and I am
+              committed to staying at the forefront of technological
+              advancements.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience">
+      <p class="section__text_p1">Explore my</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-container">
+        <div class="experience-details-container">
+          <h1 class="experience-title">React Native Developer</h1>
+          <div class="company-container">
+            <img
+              src="./assets/wlc-icon.png"
+              alt="company icon"
+              class="company-icon"
+              onclick="window.open('https://www.whitelotuscorporation.com/', '_blank')"
+            />
+            <p
+              class="company-name"
+              onclick="window.open('https://www.whitelotuscorporation.com/', '_blank')"
+            >
+              Whitelotus Corporation Pvt.Ltd
+            </p>
+          </div>
+          <div class="experience-year-container">
+            <h3>Experience:</h3>
+            <p class="year-text">&nbsp; 1 year</p>
+          </div>
+          <div class="role-container">
+            <h3>Role Description:</h3>
+            <ul class="description">
+              <li>
+                Integration of UI/UX components to deliver a user-friendly
+                experience.
+              </li>
+              <li>Utilize Redux for effective state management.</li>
+              <li>
+                Implement secure user authentication using Firebase,
+                user-friendly login and registration process.
+              </li>
+              <li>
+                Handle data synchronization and manage API responses efficiently
+              </li>
+              <li>
+                Develop applications for both iOS and Android platforms, using
+                Xcode and Android Studio
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="experience-details-container">
+          <h1 class="experience-title">Asp.net Developer</h1>
+          <div class="company-container">
+            <img
+              src="./assets/soi-logo.jpeg"
+              alt="company icon"
+              class="company-icon"
+              onclick="window.open('http://shriominfotech.com/', '_blank')"
+            />
+            <p
+              class="company-name"
+              onclick="window.open('http://shriominfotech.com/', '_blank')"
+            >
+              Shri Om Infotech
+            </p>
+          </div>
+          <div class="experience-year-container">
+            <h3>Experience:</h3>
+            <p class="year-text">&nbsp; 3 months &nbsp;(Internship)</p>
+          </div>
+          <div class="role-container">
+            <h3>Role Description:</h3>
+            <ul class="description">
+              <li>
+                Contribute to the design and development of web applications
+                using ASP.NET technologies.
+              </li>
+              <li>
+                Write clean, efficient, and maintainable code following
+                established coding standards.
+              </li>
+              <li>
+                Document code, technical specifications, and development
+                processes.
+              </li>
+              <li>
+                Actively participate in training sessions and skill-building
+                exercises provided by the development team.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="./assets/arrow.png"
+        alt="arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#skills'"
+      />
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills">
+      <p class="section__text_p1">Discover my</p>
+      <h1 class="title">Skill Set</h1>
+      <div class="skill-container">
+        <div class="skill-details">
+          <img src="./assets/html-5.png" alt="skil icon" class="skill-icon" />
+          <p class="section__text_p1">HTML</p>
+        </div>
+        <div class="skill-details">
+          <img src="./assets/css-3.png" alt="skill icon" class="skill-icon" />
+          <p class="section__text_p1">CSS</p>
+        </div>
+        <div class="skill-details">
+          <img src="./assets/js-icon.png" alt="skill icon" class="skill-icon" />
+          <p class="section__text_p1">Java Script</p>
+        </div>
+        <div class="skill-details">
+          <img
+            src="./assets/Typescript.png"
+            alt="skill icon"
+            class="skill-icon"
+          />
+          <p class="section__text_p1">Type Script</p>
+        </div>
+      </div>
+      <div class="skill-container">
+        <div class="skill-details">
+          <img src="./assets/physics.png" alt="skill icon" class="skill-icon" />
+          <p class="section__text_p1">React JS</p>
+        </div>
+        <div class="skill-details">
+          <img
+            src="./assets/react-native.webp"
+            alt="skill icon"
+            class="skill-icon"
+          />
+          <p class="section__text_p1">React Native</p>
+        </div>
+        <div class="skill-details">
+          <img src="./assets/asp-net.png" alt="skill icon" class="skill-icon" />
+          <p class="section__text_p1">Asp.net</p>
+        </div>
+        <div class="skill-details">
+          <img
+            src="./assets/fire-base.png"
+            alt="skill icon"
+            class="skill-icon"
+          />
+          <p class="section__text_p1">Firebase</p>
+        </div>
+      </div>
+
+      <div class="skill-container">
+        <div class="skill-details">
+          <img src="./assets/xcode.png" alt="skill icon" class="skill-icon" />
+          <p class="section__text_p1">Xcode</p>
+        </div>
+        <div class="skill-details">
+          <img
+            src="./assets/android-logo.png"
+            alt="skill icon"
+            class="skill-icon"
+          />
+          <p class="section__text_p1">Android</p>
+        </div>
+        <div class="skill-details">
+          <img src="./assets/redux.webp" alt="skill icon" class="skill-icon" />
+          <p class="section__text_p1">Redux</p>
+        </div>
+        <div class="skill-details">
+          <img src="./assets/github.png" alt="skill icon" class="skill-icon" />
+          <p class="section__text_p1">Github</p>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#project'"
+      />
+    </section>
+
+    <!-- PROJECT SECTION -->
+
+    <section id="project">
+      <p class="section__text_p1">Delve into my</p>
+      <h1 class="title">Projects</h1>
+
+      <div class="experience-container">
+        <div class="project-container">
+          <img
+            src="./assets/project-1.png"
+            alt="project icon"
+            class="project-icon"
+          />
+          <h1 class="project-text">Protfolio</h1>
+          <div class="btn-container">
+            <button class="btn btn-color-3">Github</button>
+            <button class="btn btn-color-3">Live Demo</button>
+          </div>
+        </div>
+        <div class="project-container">
+          <img
+            src="./assets/project-2.png"
+            alt="project icon"
+            class="project-icon"
+          />
+          <h1 class="project-text">One Click</h1>
+          <div class="btn-container">
+            <button class="btn btn-color-3">Github</button>
+            <button class="btn btn-color-3">Live Demo</button>
+          </div>
+        </div>
+        <div class="project-container">
+          <img
+            src="./assets/project-3.png"
+            alt="project icon"
+            class="project-icon"
+          />
+          <h1 class="project-text">Go Saudi</h1>
+          <div class="btn-container">
+            <button class="btn btn-color-3">Github</button>
+            <button class="btn btn-color-3">Live Demo</button>
+          </div>
+        </div>
+      </div>
+      <!-- SEE MORE -->
+      <span id="more" style="display: none">
+        <div class="experience-container" style="margin-top: 20px">
+          <div class="project-container">
+            <img
+              src="./assets/project-1.png"
+              alt="project icon"
+              class="project-icon"
+            />
+            <h1 class="project-text">Protfolio</h1>
+            <div class="btn-container">
+              <button class="btn btn-color-3">Github</button>
+              <button class="btn btn-color-3">Live Demo</button>
+            </div>
+          </div>
+          <div class="project-container">
+            <img
+              src="./assets/project-2.png"
+              alt="project icon"
+              class="project-icon"
+            />
+            <h1 class="project-text">One Click</h1>
+            <div class="btn-container">
+              <button class="btn btn-color-3">Github</button>
+              <button class="btn btn-color-3">Live Demo</button>
+            </div>
+          </div>
+          <div class="project-container">
+            <img
+              src="./assets/project-3.png"
+              alt="project icon"
+              class="project-icon"
+            />
+            <h1 class="project-text">Go Saudi</h1>
+            <div class="btn-container">
+              <button class="btn btn-color-3">Github</button>
+              <button class="btn btn-color-3">Live Demo</button>
+            </div>
+          </div>
+        </div>
+      </span>
+
+      <div class="middle-button">
+        <button
+          class="btn btn-color-3"
+          id="myBtn"
+          onclick="seeMoreFunction()"
+          style="margin-bottom: 60px"
+        >
+          See More
+        </button>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+
+    <section id="contact">
+      <p class="section__text_p1">Get in touch</p>
+      <h1 class="title">Contact Me</h1>
+
+      <div class="section-container">
+        <div class="contact-container">
+          <div>
+            <div class="contact-details-container">
+              <img
+                src="./assets/mail.png"
+                alt="company icon"
+                class="company-icon"
+              />
+              <p class="contact-text">
+                <a href="mailto:divyakumarpatel711@gmail.com">
+                  divyakumarpatel711@gmail.com
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <div class="contact-details-container">
+              <img
+                src="./assets/phone.png"
+                alt="company icon"
+                class="company-icon"
+              />
+              <p class="contact-text">+1 (807)-355-8933</p>
+            </div>
+          </div>
+
+          <div>
+            <div class="contact-details-container">
+              <img
+                src="./assets/location.png"
+                alt="company icon"
+                class="company-icon"
+              />
+              <p class="contact-text">Ontario, Canada</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-main-container">
+          <form name="submit-to-google-sheet">
+            <div>
+              <input
+                type="text"
+                class="text-input"
+                name="Name"
+                placeholder="Your Name"
+                required
+              />
+            </div>
+
+            <div style="margin-top: 30px">
+              <input
+                type="email"
+                name="Email"
+                class="text-input"
+                placeholder="Your Email"
+                required
+              />
+            </div>
+
+            <div style="margin-top: 30px">
+              <textarea
+                type="text"
+                name="Message"
+                rows="6"
+                class="text-area"
+                placeholder="Your Message"
+              ></textarea>
+            </div>
+            <div class="middle-button">
+              <button class="submit-button" id="myBtn">Submit</button>
+            </div>
+          </form>
+
+          <span id="msg"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <div>
+      <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#project">Project</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>Copyright &#169; 2023 Divyakumar Patel. All Right Reserved.</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwSYO2wjc-uwsbeQF2YLUeebymGtcbx1GbBeDyzi1kdpPW4n5E52tlm1VgsRx23pQxA/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 4000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
